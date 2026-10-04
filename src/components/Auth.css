@@ -1,0 +1,100 @@
+.auth-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+.btn-auth {
+  background: var(--color-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: var(--glass-border);
+  border-radius: var(--border-radius-pill);
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text);
+  cursor: pointer;
+  box-shadow: var(--shadow-glass);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn-auth:hover {
+  background: var(--color-bg);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.profile-pic {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--color-secondary);
+  cursor: pointer;
+  box-shadow: var(--shadow-glass);
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+.auth-dropdown {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 250px;
+  padding: 20px;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  border-bottom: var(--glass-border);
+  padding-bottom: 12px;
+}
+
+.user-name {
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  font-size: 1.1rem;
+}
+
+.user-email {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
+
+.user-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout-btn {
+  width: 100%;
+  margin-top: 10px;
+  color: #d35400;
+}
+
+.logout-btn:hover {
+  background: rgba(211, 84, 0, 0.1);
+}

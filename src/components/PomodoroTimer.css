@@ -1,0 +1,116 @@
+.pomodoro-card {
+  align-items: center;
+}
+
+.mode-title {
+  font-size: 2rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.timer-ring-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  transition: box-shadow 1s ease;
+}
+
+.timer-ring-container.active-glow {
+  box-shadow: 0 0 40px rgba(150, 114, 89, 0.2);
+}
+
+.timer-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.time-display {
+  font-size: 4rem;
+  font-weight: 300;
+  color: var(--color-primary-dark);
+  z-index: 10;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -2px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.controls .btn {
+  width: 120px;
+  font-weight: 400;
+}
+
+.popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(44, 30, 22, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  z-index: 50;
+  animation: fadeIn 0.4s ease;
+}
+
+.popup-glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  border: var(--glass-border);
+  box-shadow: var(--shadow-glass);
+  text-align: center;
+  width: 90%;
+  max-width: 340px;
+}
+
+.popup-glass h3 {
+  font-size: 1.8rem;
+  color: var(--color-primary-dark);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.popup-glass p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: var(--color-text);
+}
+
+.popup-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-buttons .btn {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+body.night-mode .popup-glass {
+  background: rgba(20, 10, 5, 0.92);
+  color: var(--color-text);
+}

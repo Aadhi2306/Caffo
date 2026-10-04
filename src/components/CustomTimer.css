@@ -1,0 +1,71 @@
+.custom-card {
+  width: 100%;
+}
+
+.time-selection-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.time-btn {
+  margin-bottom: 0;
+  width: 100%;
+  max-width: none;
+  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-weight: 400;
+}
+
+.time-btn:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.night-mode .time-btn {
+  background: rgba(20, 10, 5, 0.72);
+  color: var(--color-text);
+}
+
+body.night-mode .time-btn:hover {
+  background: rgba(20, 10, 5, 0.92);
+}
+
+.brewing-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-controls {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.custom-controls .btn {
+  width: min(100%, 150px);
+  margin-bottom: 0;
+}
+
+.custom-timer-display {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}

@@ -1,0 +1,29 @@
+.home {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  max-width: 500px;
+}
+
+.hero-cup-container {
+  width: 100%;
+  height: 250px;
+  margin: 0 auto 30px auto;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.hero-cup-container:hover {
+  transform: scale(1.02);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  z-index: 20;
+  position: relative;
+  width: 100%;
+}
